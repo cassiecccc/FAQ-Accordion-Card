@@ -1,0 +1,201 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #4a4b5e;
+}
+
+section {
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+}
+
+.card-wrapper {
+  width: 920px;
+  height: 509px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background-color: #ffffff;
+  border-radius: 23px;
+  background-image: url(./images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left -85px top 75px;
+}
+
+.left {
+  background: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right 70px bottom -140px;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  bottom: 110px;
+  left: -95px;
+}
+
+.h1 {
+  font-size: 32px;
+  font-weight: 700;
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.right-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.question-wrapper {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.question {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.question-title {
+  font-size: 14px;
+}
+
+.question-title:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.answer {
+  width: 321px;
+  padding-bottom: 0.75rem;
+  line-height: 1.2rem;
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.active > [data-question] > [data-title] {
+  color: #1d1e35;
+  font-weight: 700;
+}
+
+.active > [data-answer] {
+  display: block;
+}
+
+.active > [data-question] > [data-arrow] {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 375px) {
+  .left {
+    display: none;
+  }
+  .card-wrapper {
+    background-image: none;
+    width: 327px;
+    height: 525px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+  }
+  .mobile {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-woman {
+    width: 237px;
+    position: relative;
+    bottom: 110px;
+  }
+  .mobile-pattern {
+    width: 240px;
+    position: relative;
+    bottom: 180px;
+  }
+  .h1 {
+    margin-top: -12rem;
+    text-align: center;
+  }
+  .right-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .question-title {
+    font-size: 13px;
+  }
+  .question {
+    width: 279px;
+    padding-bottom: 0.35rem;
+  }
+  .answer {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
